@@ -42,6 +42,24 @@ const ProfileScreen = (props) => {
               </Text>
             </View>
           </Card>
+
+          <Card>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <Avatar
+                containerStyle={{ backgroundColor: "cyan" }}
+                rounded
+                icon={{
+                  name: "thumbs-o-up",
+                  type: "font-awesome",
+                  color: "black",
+                }}
+                activeOpacity={1}
+              />
+              <Text style={{ paddingHorizontal: 10 }}>
+                {auth.CurrentUser.name} Liked Your Post Profile Page.
+              </Text>
+            </View>
+          </Card>
         </View>
       )}
     </AuthContext.Consumer>
